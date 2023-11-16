@@ -21,3 +21,4 @@ class Intervalle_net() :
     def __mul__(self, other) :
         return Intervalle_net(max([self.a1 * other.b1, self.a1 * other.b2, self.a2 * other.b1, self.a2 * other.b2]), 
                               max([self.b1 * other.a1, self.b1 * other.a2, self.b2 * other.a1, self.b2 * other.a2]))
+
